@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiNet - Modern Pi Araçları</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-left">
+        <img src="icon.png" alt="PiNet Logo" class="logo">
+        <span class="brand-name">PiNet</span>
+    </div>
+    <div class="nav-links">
+        <button class="nav-btn active" onclick="showTab('math')">Matematik</button>
+        <button class="nav-btn" onclick="showTab('dev')">Yazılım</button>
+        <button class="nav-btn" onclick="showTab('physics')">Fizik</button>
+        <button class="nav-btn" onclick="showTab('art')">Sanat</button>
+    </div>
+</nav>
+
+<main class="container">
+    <div id="math" class="tab-content active">
+        <div class="feature-bar">
+            <h3>Daire ve Küre Hesapları</h3>
+            <p>Çevre ($2\pi r$) ve hacüm ($\frac{4}{3}\pi r^3$) formülleriyle anlık hesaplamalar.</p>
+        </div>
+        <div class="feature-bar">
+            <h3>Trigonometri</h3>
+            <p>Açıları radyan cinsinden ifade edin. $180^\circ = \pi$ radyan.</p>
+        </div>
+        <div class="feature-bar">
+            <h3>Sinyal İşleme</h3>
+            <p>Fourier Dönüşümü ile dalga boyu analizi ve frekans hesaplama.</p>
+        </div>
+    </div>
+
+    <div id="dev" class="tab-content">
+        <div class="feature-bar">
+            <h3>Monte Carlo Simülasyonu</h3>
+            <p>Rastgele nokta atışlarıyla $\pi$ sayısını tahmin eden algoritmalar.</p>
+        </div>
+        <div class="feature-bar">
+            <h3>Basamak Yarışı</h3>
+            <p>Chudnovsky algoritması ile işlemci gücünü test et.</p>
+        </div>
+    </div>
+
+    <div id="physics" class="tab-content">
+        <div class="feature-bar">
+            <h3>Yörünge Mekaniği</h3>
+            <p>Gezegen ve uyduların yörünge periyotlarını hesaplayın.</p>
+        </div>
+    </div>
+
+    <div id="art" class="tab-content">
+        <div class="feature-bar">
+            <h3>Piphilology</h3>
+            <p>Pi basamaklarıyla uyumlu şiirler (Piems) oluşturun.</p>
+        </div>
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
